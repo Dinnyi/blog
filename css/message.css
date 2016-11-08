@@ -1,0 +1,20 @@
+.main .message .art-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.main .message .comment-info {
+  margin-top: 15px;
+}
+.main .message .comment-info input[type="text"] {
+  width: 210px;
+  float: left;
+  margin-right: 15px;
+}
+.main .message .comment-submit {
+  margin-top: 15px;
+}
+.main .message .comment-submit input[type="submit"] {
+  width: 100%;
+}

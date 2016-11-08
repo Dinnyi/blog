@@ -26,159 +26,14 @@
         letter-spacing: 1px;
       }
     }
-    .my-info{
-      height: 500px;
-      padding:15px;
-      background: rgba(0,0,0,0.6);
-      box-shadow: 1px 1px 5px 0 rgba(0,0,0,1);
-      .head-portrait{
-        position: relative;
-        width: 100%;
-        height: 150px;
-        background: url("../img/cat.jpg") no-repeat;
-        background-size: 100%;
-      }
-      .me-name{
-        width: 100%;
-        height: 50px;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 26px;
-        font-family:'微软雅黑',sans-serif;
-        line-height: 50px;
-      }
-      .me-word{
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-        line-height:24px;
-        margin-top: 10px;
-        .word-text{
-          display: table;
-          margin: 0 auto;
-          text-align: left;
-        }
-      }
-    }
   }
 }
 // banner结束
 
-// 社交开始
-.social{
-  margin-top: 20px;
-  a{
-    position: relative;
-    display: inline-block;
-    width:40px;
-    height: 40px;
-    font-size: 22px;
-    line-height:40px;
-    text-align: center;
-    border:1px solid #666666;
-    border-radius: 50%;
-    background: rgba(255, 18, 64, 0.6);
-    transition: background .5s, transform .5s;
-    &:before{
-      content: '';
-      opacity: 0;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      border: 6px solid transparent;
-      border-top-color: rgba(0, 0, 0, 0.8);
-      transform: translate(-50%, -5px);
-      transition: all .5s;
-    }
-    &:after{
-      content: attr(title);
-      opacity: 0;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      min-width: 30px;
-      padding: 0 8px;
-      height: 22px;
-      font-size: 12px;
-      line-height: 22px;
-      text-align: center;
-      white-space: nowrap;
-      border-radius: 3px;
-      background: rgba(0, 0, 0, 0.8);
-      transform: translate(-50%, -26px);
-      transition: all .5s;
-    }
-    &:hover{
-      background: #b90024;
-      transform: scale(1.3);
-      z-index:1;
-      &:before{
-        opacity: 1;
-      }
-      &:after{
-        opacity: 1;
-      }
-    }
-  }
-}
-// 社交结束
-
 // main开始
 .main{
   margin-top: 60px;
-  .dir-title{
-    position: absolute;
-    left: -16px;
-    top: 18px;
-    width: 100px;
-    height: 30px;
-    text-align: right;
-    line-height: 30px;
-    padding-right: 15px;
-    border-radius:0 3px 3px 0;
-    background: rgba(255, 18, 64, 1);
-    box-sizing: border-box;
-    &:after{
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -16px;
-      border: 8px solid transparent;
-      border-top-color: #6f0016;
-      border-right-color: #6f0016;
-    }
-  }
   .article-warp{
-    .article-header{
-      height: 80px;
-      padding-top: 18px;
-      padding-left: 90px;
-      .dir-list{
-        height: 30px;
-        .dir-item{
-          float: left;
-          padding: 0 8px;
-          line-height: 30px;
-          position: relative;
-          a:hover{
-            text-decoration: underline;
-          }
-          &.last:after{
-            display: none;
-          }
-          &:after{
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 6px;
-            display: block;
-            width: 1px;
-            height: 18px;
-            background: #ff1240;
-          }
-        }
-      }
-    }
     .article-box{
       position: relative;
       transition: box-shadow .5s , height .3s;
@@ -226,33 +81,6 @@
           font-size: 15px;
         }
       }
-      .art-title{
-        font-size: 25px;
-        line-height: 56px;
-        text-align: center;
-        a{
-          color: #ff1e4c;
-          &:hover{
-            color: #ff1240;
-          }
-        }
-      }
-      .art-info{
-        text-align: center;
-        margin-bottom: 80px;
-      }
-      .art-intro, .art-content{
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 1px;
-        p{
-          text-indent: 32px;
-          margin: 8px 0;
-        }
-      }
-      .art-content{
-        overflow: hidden;
-      }
       .art-btn-group{
         margin: 15px 0;
         text-align: center;
@@ -264,89 +92,6 @@
           font-size: 14px;
           border-radius: 3px;
           background: #ff1240;
-        }
-      }
-      .art-foot{
-        margin-bottom: 5px;
-        background: #0f0f0f;
-        .tag{
-        }
-        .link{
-          margin-top: 10px;
-        }
-        .share{
-          margin-top: 10px;
-          a{
-            display: inline-block;
-            width: 35px;
-            height: 35px;
-            margin: 0 5px;
-            line-height: 35px;
-            font-size: 18px;
-            text-align: center;
-            border: 1px solid #ff1240;
-            border-radius: 50%;
-            &.fa-weibo{
-              color: #ff763b;
-              border-color: #ff763b;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #ff763b;
-              }
-            }
-            &.fa-wechat{
-              color: #7bc549;
-              border-color: #7bc549;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #7bc549;
-              }
-            }
-            &.fa-qq{
-              color: #56b6e7;
-              border-color: #56b6e7;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #56b6e7;
-              }
-            }
-            &.fa-star{
-              color: #FDBE3D;
-              border-color: #FDBE3D;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #FDBE3D;
-              }
-            }
-            &.fa-linkedin{
-              color: #55acee;
-              border-color: #55acee;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #55acee;
-              }
-            }
-            &.fa-plus{
-              color: #ff1240;
-              border-color: #ff1240;
-              &:hover{
-                color: #FFFFFF;
-                background-color: #ff1240;
-              }
-            }
-          }
-
-        }
-        .support{
-          margin-top: 15px;
-          text-align: center;
-          a{
-            display: inline-block;
-            padding: 0 5px;
-            border-radius: 3px;
-            margin: 0 15px;
-            background: #ff1026;
-          }
         }
       }
       &:hover{
