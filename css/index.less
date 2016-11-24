@@ -33,88 +33,84 @@
 // main开始
 .main{
   margin-top: 60px;
-  .article-warp{
-    .article-box{
-      position: relative;
-      transition: box-shadow .5s , height .3s;
-      .dir-title{
-        top: 110px;
-      }
-      .art-time{
+  .article-box{
+    position: relative;
+    transition: box-shadow .5s , height .3s;
+    .dir-title{
+      top: 110px;
+    }
+    .art-time{
+      position: absolute;
+      top: -20px;
+      left: -25px;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      border: solid #ff1240;
+      border-top-width: 30px;
+      border-right-width: 0px;
+      border-bottom-width: 1px;
+      border-left-width: 25px;
+      border-radius: 0 225px 68px 183px;
+      .year{
         position: absolute;
-        top: -20px;
-        left: -25px;
-        width: 45px;
-        height: 45px;
-        border: solid #ff1240;
-        border-top-width: 30px;
-        border-right-width: 0px;
-        border-bottom-width: 1px;
-        border-left-width: 25px;
-        border-radius: 0 225px 68px 183px;
-        .year{
-          position: absolute;
-          left: 16px;
-          top: 24px;
-          font-family: Georgia, serif;
-          font-size: 33px;
-          color: #ff1240;
-          font-style: oblique;
-        }
-        .month{
-          position: absolute;
-          left: -24px;
-          top: -23px;
-          font-size: 32px;
-          letter-spacing: -1px;
-        }
-        .month-cn{
-          position: absolute;
-          top: -18px;
-          left: 13px;
-          font-size: 14px;
-        }
-        .day{
-          position: absolute;
-          left: -19px;
-          top: 0px;
-          font-size: 15px;
-        }
+        left: 16px;
+        top: 24px;
+        font-family: Georgia, serif;
+        font-size: 33px;
+        color: #ff1240;
+        font-style: oblique;
       }
-      .art-btn-group{
-        margin: 15px 0;
-        text-align: center;
-        .btn{
-          margin: 0 15px;
-          padding: 3px 8px;
-          color: #fff;
-          font-family: Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
-          font-size: 14px;
-          border-radius: 3px;
-          background: #ff1240;
-        }
+      .month{
+        position: absolute;
+        left: -24px;
+        top: -23px;
+        font-size: 32px;
+        letter-spacing: -1px;
       }
-      &:hover{
-        box-shadow: 1px 1px 3px 0 #000;
+      .month-cn{
+        position: absolute;
+        top: -18px;
+        left: 13px;
+        font-size: 14px;
+      }
+      .day{
+        position: absolute;
+        left: -19px;
+        top: 0px;
+        font-size: 15px;
+      }
+    }
+    .art-btn-group{
+      margin: 15px 0;
+      text-align: center;
+      .btn{
+        margin: 0 15px;
+        padding: 3px 8px;
+        color: #fff;
+        font-family: Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+    }
+    &:hover{
+      box-shadow: 1px 1px 3px 0 #000;
+    }
+  }
+  .aside-header{
+    .hot-tag{
+      margin-top: 48px;
+      li{
+        float: left;
       }
     }
   }
-  .aside-warp{
-    .aside-header{
-      .hot-tag{
-        margin-top: 48px;
-        li{
-          float: left;
-        }
-      }
-    }
-    .aside-box{
-      .select{
-        margin-top: 48px;
-        .select-item{
-          i{
-            margin-right: 5px;
-          }
+  .aside-box{
+    .select{
+      margin-top: 48px;
+      .select-item{
+        i{
+          margin-right: 5px;
         }
       }
     }
@@ -128,7 +124,6 @@
       padding: 5px 0;
       text-align: center;
       border-radius: 3px;
-      background: #ff1240;
     }
   }
 }
