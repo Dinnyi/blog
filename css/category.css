@@ -1,0 +1,58 @@
+.main .category-box {
+  padding: 0;
+  background: transparent;
+}
+.main .content-warp {
+  position: relative;
+}
+.main .art-left {
+  position: relative;
+  float: left;
+  padding: 8px;
+  border-radius: 5px;
+  background: #ff1240;
+  box-sizing: border-box;
+  border-top-right-radius: 68%;
+  border-bottom-right-radius: 68%;
+}
+.main .art-left:after {
+  content: '';
+  position: absolute;
+  top: 34px;
+  right: -21px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  background: #ff1240;
+}
+.main .art-right {
+  margin-left: 220px;
+  padding: 15px;
+  background: #0f0f0f;
+  border-radius: 5px;
+}
+.main .art-right:before {
+  content: '';
+  position: absolute;
+  left: 196px;
+  top: 0px;
+  border: solid;
+  border-color: transparent #0f0f0f transparent transparent;
+  border-right-width: 22px;
+  border-bottom-width: 124px;
+  border-top-width: 40px;
+  border-radius: 9px;
+}
+.main .art-right .art-data {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.main .art-line {
+  position: absolute;
+  top: 0;
+  left: 183px;
+  width: 2px;
+  height: 100%;
+  background: #0f0f0f;
+}

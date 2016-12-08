@@ -141,10 +141,14 @@ button.btn-common:hover {
   height: 0;
   clear: both;
 }
-.p-container {
-  padding: 0 35px;
+.ctn-warp {
+  padding: 50px 35px;
+}
+.main-other {
+  margin-top: 50px;
 }
 .article {
+  position: relative;
   margin-right: 380px;
   box-sizing: border-box;
 }
@@ -204,12 +208,6 @@ button.btn-common:hover {
 }
 .my-info .basic-info {
   margin-top: 20px;
-}
-.main {
-  margin-top: 50px;
-}
-.main .ctn-warp {
-  margin-top: 60px;
 }
 .main .dir-title {
   position: absolute;
@@ -497,26 +495,22 @@ button.btn-common:hover {
 .footer {
   background: #0f0f0f;
 }
-.footer .foot-ct {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.footer .foot-ct .my-social {
+.footer .my-social {
   width: 25%;
   float: left;
 }
-.footer .foot-ct .foot-info {
+.footer .foot-info {
   width: 40%;
   float: left;
 }
-.footer .foot-ct .foot-info p {
+.footer .foot-info p {
   text-align: center;
 }
-.footer .foot-ct .foot-links {
+.footer .foot-links {
   width: 25%;
   float: right;
 }
-.footer .foot-ct .foot-links .links-list {
+.footer .foot-links .links-list {
   float: left;
   margin-right: 30px;
 }

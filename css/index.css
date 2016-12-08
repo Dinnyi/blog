@@ -26,9 +26,6 @@
   line-height: 30px;
   letter-spacing: 1px;
 }
-.main {
-  margin-top: 60px;
-}
 .main .article-box {
   position: relative;
   transition: box-shadow 0.5s, height 0.3s;
@@ -107,7 +104,6 @@
 }
 .main .article-loading {
   margin-right: 380px;
-  margin-bottom: 30px;
 }
 .main .article-loading button {
   display: block;

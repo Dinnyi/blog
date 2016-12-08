@@ -135,12 +135,16 @@ span.btn-common, button.btn-common{
 }
 
   //中心区域布局之Padding
-.p-container{
-  padding:0 35px;
+.ctn-warp{
+  padding:50px 35px;
 }
 
   //中心布局之左右
+.main-other{
+  margin-top: 50px;
+}
 .article{
+  position: relative;
   margin-right: 380px;
   box-sizing: border-box;
 }
@@ -215,10 +219,6 @@ span.btn-common, button.btn-common{
 
 // 主体开始
 .main{
-  margin-top: 50px;
-  .ctn-warp{
-    margin-top: 60px;
-  }
   .dir-title{
     position: absolute;
     left: -16px;
@@ -512,30 +512,25 @@ span.btn-common, button.btn-common{
 //foot开始
 .footer{
   background: #0f0f0f;
-  .foot-ct{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    .my-social{
-      width: 25%;
-      float: left;
-    }
-    .foot-info{
-      width: 40%;
-      float: left;
-      p{
-        text-align: center;
-      }
-    }
-    .foot-links{
-      width: 25%;
-      float: right;
-      .links-list{
-        float: left;
-        margin-right: 30px;
-      }
+  .my-social{
+    width: 25%;
+    float: left;
+  }
+  .foot-info{
+    width: 40%;
+    float: left;
+    p{
+      text-align: center;
     }
   }
-
+  .foot-links{
+    width: 25%;
+    float: right;
+    .links-list{
+      float: left;
+      margin-right: 30px;
+    }
+  }
 }
 //foot结束
 
