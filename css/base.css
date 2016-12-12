@@ -114,6 +114,7 @@ button.btn-common:hover {
   background: #de002b;
 }
 .container-full {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
 }
@@ -127,6 +128,7 @@ button.btn-common:hover {
   clear: both;
 }
 .container {
+  position: relative;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -149,10 +151,19 @@ button.btn-common:hover {
 }
 .article {
   position: relative;
-  margin-right: 380px;
   box-sizing: border-box;
 }
+.article-warp {
+  float: left;
+  width: 100%;
+}
+.article-warp .content {
+  margin-right: 380px;
+}
 .aside {
+  position: absolute;
+  top: 50px;
+  right: 35px;
   float: right;
   width: 350px;
   box-sizing: border-box;
@@ -167,10 +178,13 @@ button.btn-common:hover {
   background: #0f0f0f;
   box-sizing: border-box;
 }
+.clearfix:before {
+  content: '';
+  display: table;
+}
 .clearfix:after {
   content: '';
-  display: block;
-  height: 0;
+  display: table;
   clear: both;
 }
 .my-info {

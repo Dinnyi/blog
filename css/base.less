@@ -102,6 +102,7 @@ span.btn-common, button.btn-common{
 
   //全屏布局 防止上边距崩塌 清除浮动
 .container-full{
+  position: relative;
   width:100%;
   box-sizing: border-box;
 }
@@ -118,6 +119,7 @@ span.btn-common, button.btn-common{
 
   //中心区域布局 防止上边距崩塌 清除浮动
 .container{
+  position: relative;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -145,10 +147,19 @@ span.btn-common, button.btn-common{
 }
 .article{
   position: relative;
-  margin-right: 380px;
   box-sizing: border-box;
 }
+.article-warp{
+  float: left;
+  width: 100%;
+  .content{
+    margin-right: 380px;
+  }
+}
 .aside{
+  position: absolute;
+  top: 50px;
+  right: 35px;
   float: right;
   width:350px;
   box-sizing: border-box;
@@ -165,13 +176,13 @@ span.btn-common, button.btn-common{
 }
 
   //清除浮动
-.clearfix{
-
+.clearfix:before{
+  content: '';
+  display: table;
 }
 .clearfix:after{
   content: '';
-  display: block;
-  height: 0;
+  display: table;
   clear: both;
 }
 // COMMON 结束
