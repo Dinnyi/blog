@@ -8,10 +8,11 @@
 }
 .banner .welcome {
   position: absolute;
-  padding-top: 50px;
+  padding: 0;
   overflow: hidden;
 }
 .banner .welcome .my-intro {
+  display: none;
   padding: 0 15px;
   text-shadow: 3px 3px 5px #000;
   margin-right: 350px;
@@ -31,9 +32,11 @@
   transition: box-shadow 0.5s, height 0.3s;
 }
 .main .article-box .dir-title {
-  top: 110px;
+  top: 105px;
+  margin-top: 20px;
 }
 .main .article-box .art-time {
+  display: none;
   position: absolute;
   top: -20px;
   left: -25px;
@@ -80,7 +83,7 @@
   text-align: center;
 }
 .main .article-box .art-btn-group .btn {
-  margin: 0 15px;
+  margin: 0 8px;
   padding: 3px 8px;
   color: #fff;
   font-family: Helvetica, Arial, "Microsoft YaHei", "微软雅黑", sans-serif;
@@ -101,9 +104,6 @@
 }
 .main .aside-box .select .select-item i {
   margin-right: 5px;
-}
-.main .article-loading {
-  margin-right: 380px;
 }
 .main .article-loading button {
   display: block;

@@ -138,7 +138,8 @@ span.btn-common, button.btn-common{
 
   //中心区域布局之Padding
 .ctn-warp{
-  padding:50px 35px;
+  //padding:50px 35px;
+  padding:15px 0px;
 }
 
   //中心布局之左右
@@ -152,22 +153,26 @@ span.btn-common, button.btn-common{
 .article-warp{
   float: left;
   width: 100%;
+  //margin-right: -380px;
   .content{
-    margin-right: 380px;
+    //margin-right: 380px;
   }
 }
 .aside{
-  position: absolute;
-  top: 50px;
-  right: 35px;
   float: right;
-  width:350px;
+  //width:350px;
+  width: 100%;
   box-sizing: border-box;
+}
+.aside-warp{
+  display: none;
 }
 .box{
   position: relative;
   margin-bottom: 40px;
-  padding: 15px;
+  margin-bottom: 15px;
+  //padding: 15px;
+  padding: 8px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -190,7 +195,8 @@ span.btn-common, button.btn-common{
 
 // 我的信息模块开始
 .my-info{
-  padding:15px;
+  //padding:15px;
+  padding: 8px;
   background: rgba(0,0,0,0.6);
   box-shadow: 1px 1px 5px 0 rgba(0,0,0,1);
   .head-portrait{
@@ -223,6 +229,14 @@ span.btn-common, button.btn-common{
   }
   .basic-info{
     margin-top: 20px;
+  }
+}
+
+.mobile-intro{
+  margin-top: 15px;
+  span{
+    font-weight: bold;
+    color: #ff1240;
   }
 }
 // 我的信息模块结束
@@ -314,11 +328,15 @@ span.btn-common, button.btn-common{
     }
     .share{
       margin-top: 10px;
+      font-size: 0;
+      span{
+        font-size: 14px;
+      }
       a{
         display: inline-block;
-        width: 35px;
-        height: 35px;
-        margin: 0 5px;
+        width: 33px;
+        height: 33px;
+        margin: 0 3px;
         line-height: 35px;
         font-size: 18px;
         text-align: center;
@@ -382,7 +400,8 @@ span.btn-common, button.btn-common{
         display: inline-block;
         padding: 0 5px;
         border-radius: 3px;
-        margin: 0 15px;
+        //margin: 0 15px;
+        margin: 5px 8px;
         background: #ff1026;
       }
     }
@@ -392,13 +411,35 @@ span.btn-common, button.btn-common{
 
 //  头部开始
 .header{
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  background: rgba(255, 18, 64, 0.8);
+  .mobile-nav{
+    display: block;
+    padding: 0 8px;
+    .logo{
+      float: left;
+      margin-top: 6px;
+      margin-right: 15px;
+      a{
+        display: block;
+        height: 38px;
+        width: 38px;
+        background: url("../img/logo.png") no-repeat;
+        background-size: 38px 38px;
+        font-size:26px;
+        font-family:  Arial, sans-serif;
+        text-indent: -9999em;
+      }
+    }
+  }
   .nav{
-    background: rgba(255, 18, 64, 0.8);
+    display: none;
+    padding: 0 35px;
     .logo{
       float: left;
       margin-top: 6px;
@@ -524,19 +565,21 @@ span.btn-common, button.btn-common{
 .footer{
   background: #0f0f0f;
   .my-social{
+    display: none;
     width: 25%;
     float: left;
   }
   .foot-info{
-    width: 40%;
+    width: 100%;
     float: left;
     p{
       text-align: center;
     }
   }
   .foot-links{
+    display: none;
     width: 25%;
-    float: right;
+    float: left;
     .links-list{
       float: left;
       margin-right: 30px;
@@ -669,8 +712,10 @@ span.btn-common, button.btn-common{
   opacity: 0;
   filter: Alpha(Opacity=0);//啊啦发
   position: fixed;
-  right: 68px;
-  bottom: 68px;
+  //right: 68px;
+  //bottom: 68px;
+  right: 8px;
+  bottom: 8px;
   width: 40px;
   height: 40px;
   border: 1px solid #ff1240;

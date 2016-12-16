@@ -1,0 +1,53 @@
+@media (min-width: 1200px) {
+  .article-warp {
+    margin-right: -380px;
+  }
+  .article-warp .content {
+    margin-right: 380px;
+  }
+  .aside {
+    width: 350px;
+  }
+  .aside-warp {
+    display: block;
+  }
+  .ctn-warp {
+    padding: 50px 35px;
+  }
+  .my-info {
+    padding: 15px;
+  }
+  .mobile-intro {
+    display: none;
+  }
+  .header .mobile-nav {
+    display: none;
+  }
+  .header .nav {
+    display: block;
+  }
+  .banner .welcome {
+    padding: 0 35px;
+  }
+  .banner .welcome .my-intro {
+    display: block;
+  }
+  .main .article-loading {
+    margin-right: 380px;
+  }
+  .main .article-box .dir-title {
+    margin-top: 0;
+  }
+  .footer .my-social {
+    display: block;
+  }
+  .footer .foot-info {
+    width: 50%;
+  }
+  .footer .foot-links {
+    display: block;
+  }
+  .back {
+    right: 68px;
+  }
+}
